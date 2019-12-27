@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A43B7CDB-EA72-4D5A-B2D6-B45787590407}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LiuLangBookShop.WebUI</RootNamespace>
+    <AssemblyName>LiuLangBookShop.WebUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\data\flot-data.js" />
+    <Content Include="Admin\data\morris-data.js" />
+    <Content Include="Admin\dist\css\sb-admin-2.css" />
+    <Content Include="Admin\dist\css\sb-admin-2.min.css" />
+    <Content Include="Admin\dist\js\sb-admin-2.js" />
+    <Content Include="Admin\dist\js\sb-admin-2.min.js" />
+    <Content Include="Admin\index.html" />
+    <Content Include="Admin\js\sb-admin-2.js" />
+    <Content Include="Admin\pages\BookTypeManager.aspx" />
+    <Content Include="Admin\pages\Login.aspx" />
+    <Content Include="Admin\pages\ProductList.aspx" />
+    <Content Include="Admin\pages\UserList.aspx" />
+    <Content Include="Admin\vendor\bootstrap-social\bootstrap-social.css" />
+    <Content Include="Admin\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Admin\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Admin\vendor\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Admin\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Admin\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Admin\vendor\datatables-plugins\dataTables.bootstrap.css" />
+    <Content Include="Admin\vendor\datatables-plugins\dataTables.bootstrap.js" />
+    <Content Include="Admin\vendor\datatables-plugins\dataTables.bootstrap.min.js" />
+    <Content Include="Admin\vendor\datatables-plugins\index.html" />
+    <Content Include="Admin\vendor\datatables-responsive\dataTables.responsive.css" />
+    <Content Include="Admin\vendor\datatables-responsive\dataTables.responsive.js" />
+    <Content Include="Admin\vendor\datatables\css\dataTables.bootstrap.css" />
+    <Content Include="Admin\vendor\datatables\css\dataTables.bootstrap.min.css" />
+    <Content Include="Admin\vendor\datatables\css\dataTables.bootstrap4.css" />
+    <Content Include="Admin\vendor\datatables\css\dataTables.bootstrap4.min.css" />
+    <Content Include="Admin\vendor\datatables\css\dataTables.foundation.css" />
+    <Content Include="Admin\vendor\datatables\css\dataTables.foundation.min.css" />
+    <Content Include="Admin\vendor\datatables\css\dataTables.jqueryui.css" />
+    <Content Include="Admin\vendor\datatables\css\dataTables.jqueryui.min.css" />
+    <Content Include="Admin\vendor\datatables\css\dataTables.material.css" />
+    <Content Include="Admin\vendor\datatables\css\dataTables.material.min.css" />
+    <Content Include="Admin\vendor\datatables\css\dataTables.semanticui.css" />
+    <Content Include="Admin\vendor\datatables\css\dataTables.semanticui.min.css" />
+    <Content Include="Admin\vendor\datatables\css\dataTables.uikit.css" />
+    <Content Include="Admin\vendor\datatables\css\dataTables.uikit.min.css" />
+    <Content Include="Admin\vendor\datatables\css\jquery.dataTables.css" />
+    <Content Include="Admin\vendor\datatables\css\jquery.dataTables.min.css" />
+    <Content Include="Admin\vendor\datatables\css\jquery.dataTables_themeroller.css" />
+    <Content Include="Admin\vendor\datatables\images\favicon.ico" />
+    <Content Include="Admin\vendor\datatables\images\sort_asc.png" />
+    <Content Include="Admin\vendor\datatables\images\sort_asc_disabled.png" />
+    <Content Include="Admin\vendor\datatables\images\sort_both.png" />
+    <Content Include="Admin\vendor\datatables\images\sort_desc.png" />
+    <Content Include="Admin\vendor\datatables\images\sort_desc_disabled.png" />
+    <Content Include="Admin\vendor\datatables\js\dataTables.bootstrap.js" />
+    <Content Include="Admin\vendor\datatables\js\dataTables.bootstrap.min.js" />
+    <Content Include="Admin\vendor\datatables\js\dataTables.bootstrap4.js" />
+    <Content Include="Admin\vendor\datatables\js\dataTables.bootstrap4.min.js" />
+    <Content Include="Admin\vendor\datatables\js\dataTables.foundation.js" />
+    <Content Include="Admin\vendor\datatables\js\dataTables.foundation.min.js" />
+    <Content Include="Admin\vendor\datatables\js\dataTables.jqueryui.js" />
+    <Content Include="Admin\vendor\datatables\js\dataTables.jqueryui.min.js" />
+    <Content Include="Admin\vendor\datatables\js\dataTables.material.js" />
+    <Content Include="Admin\vendor\datatables\js\dataTables.material.min.js" />
+    <Content Include="Admin\vendor\datatables\js\dataTables.semanticui.js" />
+    <Content Include="Admin\vendor\datatables\js\dataTables.semanticui.min.js" />
+    <Content Include="Admin\vendor\datatables\js\dataTables.uikit.js" />
+    <Content Include="Admin\vendor\datatables\js\dataTables.uikit.min.js" />
+    <Content Include="Admin\vendor\datatables\js\jquery.dataTables.js" />
+    <Content Include="Admin\vendor\datatables\js\jquery.dataTables.min.js" />
+    <Content Include="Admin\vendor\datatables\js\jquery.js" />
+    <Content Include="Admin\vendor\flot-tooltip\jquery.flot.tooltip.js" />
+    <Content Include="Admin\vendor\flot-tooltip\jquery.flot.tooltip.min.js" />
+    <Content Include="Admin\vendor\flot-tooltip\jquery.flot.tooltip.source.js" />
+    <Content Include="Admin\vendor\flot\excanvas.js" />
+    <Content Include="Admin\vendor\flot\excanvas.min.js" />
+    <Content Include="Admin\vendor\flot\jquery.colorhelpers.js" />
+    <Content Include="Admin\vendor\flot\jquery.flot.canvas.js" />
+    <Content Include="Admin\vendor\flot\jquery.flot.categories.js" />
+    <Content Include="Admin\vendor\flot\jquery.flot.crosshair.js" />
+    <Content Include="Admin\vendor\flot\jquery.flot.errorbars.js" />
+    <Content Include="Admin\vendor\flot\jquery.flot.fillbetween.js" />
+    <Content Include="Admin\vendor\flot\jquery.flot.image.js" />
+    <Content Include="Admin\vendor\flot\jquery.flot.js" />
+    <Content Include="Admin\vendor\flot\jquery.flot.navigate.js" />
+    <Content Include="Admin\vendor\flot\jquery.flot.pie.js" />
+    <Content Include="Admin\vendor\flot\jquery.flot.resize.js" />
+    <Content Include="Admin\vendor\flot\jquery.flot.selection.js" />
+    <Content Include="Admin\vendor\flot\jquery.flot.stack.js" />
+    <Content Include="Admin\vendor\flot\jquery.flot.symbol.js" />
+    <Content Include="Admin\vendor\flot\jquery.flot.threshold.js" />
+    <Content Include="Admin\vendor\flot\jquery.flot.time.js" />
+    <Content Include="Admin\vendor\flot\jquery.js" />
+    <Content Include="Admin\vendor\font-awesome\css\font-awesome.css" />
+    <Content Include="Admin\vendor\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Admin\vendor\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Admin\vendor\font-awesome\HELP-US-OUT.txt" />
+    <Content Include="Admin\vendor\jquery\jquery.js" />
+    <Content Include="Admin\vendor\jquery\jquery.min.js" />
+    <Content Include="Admin\vendor\metisMenu\metisMenu.css" />
+    <Content Include="Admin\vendor\metisMenu\metisMenu.js" />
+    <Content Include="Admin\vendor\metisMenu\metisMenu.min.css" />
+    <Content Include="Admin\vendor\metisMenu\metisMenu.min.js" />
+    <Content Include="Admin\vendor\morrisjs\morris.css" />
+    <Content Include="Admin\vendor\morrisjs\morris.js" />
+    <Content Include="Admin\vendor\morrisjs\morris.min.js" />
+    <Content Include="Admin\vendor\raphael\raphael.js" />
+    <Content Include="Admin\vendor\raphael\raphael.min.js" />
+    <Content Include="ContentPage\AccountInfo.aspx" />
+    <Content Include="ContentPage\BookDetail.aspx" />
+    <Content Include="ContentPage\Cart.aspx" />
+    <Content Include="ContentPage\HotBook.aspx" />
+    <Content Include="ContentPage\NewBook.aspx" />
+    <Content Include="ContentPage\Search.aspx" />
+    <Content Include="css\magnific-popup.css" />
+    <Content Include="css\style.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="html_css\bookDetail.css" />
+    <Content Include="html_css\cart.css" />
+    <Content Include="html_css\login.css" />
+    <Content Include="html_css\master.css" />
+    <Content Include="html_css\pagemain.css" />
+    <Content Include="html_css\register.css" />
+    <Content Include="html_css\search.css" />
+    <Content Include="images\admin-background.jpg" />
+    <Content Include="images\admin_logo.png" />
+    <Content Include="images\arrow.png" />
+    <Content Include="images\banner.jpeg" />
+    <Content Include="images\ld.jpg" />
+    <Content Include="images\ljw.jpeg" />
+    <Content Include="images\sjm.jpg" />
+    <Content Include="images\sjw.jpeg" />
+    <Content Include="images\top.png" />
+    <Content Include="images\zwr.jpg" />
+    <Content Include="IndividualPage\aboutus.html" />
+    <Content Include="IndividualPage\Login.aspx" />
+    <Content Include="IndividualPage\Register.aspx" />
+    <Content Include="Master\MasterPage.Master" />
+    <Content Include="Admin\vendor\bootstrap-social\bootstrap-social.less" />
+    <Content Include="Admin\vendor\bootstrap-social\bootstrap-social.scss" />
+    <Content Include="Admin\vendor\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Admin\vendor\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Admin\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Admin\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Admin\vendor\datatables-responsive\dataTables.responsive.scss" />
+    <Content Include="Admin\vendor\datatables\images\Sorting icons.psd" />
+    <Content Include="Admin\vendor\font-awesome\css\font-awesome.css.map" />
+    <Content Include="Admin\vendor\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Admin\vendor\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Admin\vendor\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Admin\vendor\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Admin\vendor\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Admin\vendor\font-awesome\less\animated.less" />
+    <Content Include="Admin\vendor\font-awesome\less\bordered-pulled.less" />
+    <Content Include="Admin\vendor\font-awesome\less\core.less" />
+    <Content Include="Admin\vendor\font-awesome\less\extras.less" />
+    <Content Include="Admin\vendor\font-awesome\less\fixed-width.less" />
+    <Content Include="Admin\vendor\font-awesome\less\font-awesome.less" />
+    <Content Include="Admin\vendor\font-awesome\less\icons.less" />
+    <Content Include="Admin\vendor\font-awesome\less\larger.less" />
+    <Content Include="Admin\vendor\font-awesome\less\list.less" />
+    <Content Include="Admin\vendor\font-awesome\less\mixins.less" />
+    <Content Include="Admin\vendor\font-awesome\less\path.less" />
+    <Content Include="Admin\vendor\font-awesome\less\rotated-flipped.less" />
+    <Content Include="Admin\vendor\font-awesome\less\screen-reader.less" />
+    <Content Include="Admin\vendor\font-awesome\less\spinning.less" />
+    <Content Include="Admin\vendor\font-awesome\less\stacked.less" />
+    <Content Include="Admin\vendor\font-awesome\less\variables.less" />
+    <Content Include="Admin\vendor\font-awesome\scss\font-awesome.scss" />
+    <Content Include="Admin\vendor\font-awesome\scss\_animated.scss" />
+    <Content Include="Admin\vendor\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="Admin\vendor\font-awesome\scss\_core.scss" />
+    <Content Include="Admin\vendor\font-awesome\scss\_extras.scss" />
+    <Content Include="Admin\vendor\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="Admin\vendor\font-awesome\scss\_icons.scss" />
+    <Content Include="Admin\vendor\font-awesome\scss\_larger.scss" />
+    <Content Include="Admin\vendor\font-awesome\scss\_list.scss" />
+    <Content Include="Admin\vendor\font-awesome\scss\_mixins.scss" />
+    <Content Include="Admin\vendor\font-awesome\scss\_path.scss" />
+    <Content Include="Admin\vendor\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="Admin\vendor\font-awesome\scss\_screen-reader.scss" />
+    <Content Include="Admin\vendor\font-awesome\scss\_spinning.scss" />
+    <Content Include="Admin\vendor\font-awesome\scss\_stacked.scss" />
+    <Content Include="Admin\vendor\font-awesome\scss\_variables.scss" />
+    <Content Include="Admin\Web.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ContentPage\Main.aspx" />
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="images\book1.jpg" />
+    <Content Include="images\book2.jpg" />
+    <Content Include="images\book3.jpg" />
+    <Content Include="images\book_logo.png" />
+    <Content Include="images\book_title.png" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\title1.png" />
+    <Content Include="images\title2.png" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\easing.js" />
+    <Content Include="js\jQuery-1.11.3.js" />
+    <Content Include="js\jquery.magnific-popup.js" />
+    <Content Include="js\move-top.js" />
+    <Content Include="UserControl\carousel.ascx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\pages\BookTypeManager.aspx.cs">
+      <DependentUpon>BookTypeManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\pages\BookTypeManager.aspx.designer.cs">
+      <DependentUpon>BookTypeManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\pages\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\pages\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\pages\ProductList.aspx.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\pages\ProductList.aspx.designer.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\pages\UserList.aspx.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\pages\UserList.aspx.designer.cs">
+      <DependentUpon>UserList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPage\AccountInfo.aspx.cs">
+      <DependentUpon>AccountInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPage\AccountInfo.aspx.designer.cs">
+      <DependentUpon>AccountInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPage\BookDetail.aspx.cs">
+      <DependentUpon>BookDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPage\BookDetail.aspx.designer.cs">
+      <DependentUpon>BookDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPage\Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPage\Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPage\HotBook.aspx.cs">
+      <DependentUpon>HotBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPage\HotBook.aspx.designer.cs">
+      <DependentUpon>HotBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPage\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPage\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPage\NewBook.aspx.cs">
+      <DependentUpon>NewBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPage\NewBook.aspx.designer.cs">
+      <DependentUpon>NewBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPage\Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPage\Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IndividualPage\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IndividualPage\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IndividualPage\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IndividualPage\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl\carousel.ascx.cs">
+      <DependentUpon>carousel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\carousel.ascx.designer.cs">
+      <DependentUpon>carousel.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{daeea23d-813c-4245-97e0-e1e960bf678f}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InterService\InterService.csproj">
+      <Project>{4036c992-e492-4cd6-aadb-c2f1b208d24a}</Project>
+      <Name>InterService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>8268</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:8268/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

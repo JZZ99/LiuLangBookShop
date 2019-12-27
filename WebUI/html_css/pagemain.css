@@ -1,0 +1,24 @@
+﻿/*#main {
+    padding-bottom: 10px;
+}*/
+/* PageMain */
+#page_main .book {
+    width: 19%;
+    display: inline-block;
+    text-align: center;
+}
+
+    #page_main .book img {
+        height: 200px;
+        width: 90%;
+    }
+
+    #page_main .book a:hover {
+        text-decoration: none;
+    }
+
+    #page_main .book h4,small {
+        white-space: nowrap;
+        text-overflow:ellipsis;
+        overflow: hidden;
+    }

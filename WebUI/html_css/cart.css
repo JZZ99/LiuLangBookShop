@@ -1,0 +1,21 @@
+﻿.card {
+    margin: 2%;
+    background-color: #fff;
+    border-color: #ddd;
+    border-width: 1px;
+    border-radius: 4px 4px 0 0;
+}
+#page_cart .book_image {
+    /*border: #ccc solid 1px;*/
+    display: inline-block;
+    width: 90%;
+}
+#page_cart th {
+    text-align: center;
+}
+#page_cart table {
+    table-layout: fixed;
+}
+#page_cart .min-height {
+    height: 410px;
+}

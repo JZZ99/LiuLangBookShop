@@ -1,0 +1,7 @@
+﻿#page_bookDetail {
+    padding: 50px 0;
+}
+#page_bookDetail .book_img {
+    display: block;
+    width: 100%;
+}

@@ -1,0 +1,50 @@
+﻿body {
+    /*background-color:white;*/
+    background-color:#99ccff;
+}
+
+
+* {
+    margin:0px;
+    padding:0px;
+}
+
+
+#header {
+
+    background-color:#99ccff;
+}
+
+
+#search 
+{
+    padding-right:10px;
+    height:auto;
+    background:#6699ff;
+    text-align:right;
+    font-size:15px;
+    color:white;
+    
+}
+
+/*.navbar-default {
+  background-color: #3c8ce7;
+  border-color: #19dd98;
+}*/
+
+
+#main {
+
+     background:#ECD482;
+}
+
+
+
+
+footer{
+
+background-color:#669CEE;
+text-align:center;
+font-size:small;
+color:#3C3C3C;
+}

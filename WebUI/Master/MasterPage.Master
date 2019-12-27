@@ -1,0 +1,204 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="LiuLangBookShop.WebUI.Master.MasterPage" %>
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+
+	<title>流浪书店</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  设置网站图标-->
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    
+	<!-- 引入 Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- 引入 母版页样式 -->
+
+    <link href="../html_css/master.css" rel="stylesheet" />
+     <!-- 引入 搜索页样式 -->
+    <link href="../html_css/search.css" rel="stylesheet" />
+
+       <!-- 引入 主页图书样式 -->
+    <link href="../html_css/pagemain.css" rel="stylesheet" />
+</head>
+
+<body style="background-color:#99ccff;">
+
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="../js/jQuery-1.11.3.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <form id="form1" runat="server" defaultbutton="BtnSearch">
+
+        <%--头部--%>
+        <div id="header">
+      	<div class="container">
+      		
+      		<div class="row">
+      			
+
+      			<div class="col-md-8">
+      					<a href="../ContentPage/Main.aspx"><img alt="title" src="../images/logo.png"  class="img-responsive" style="display: inline-block;" /></a> 
+      				<a href="../ContentPage/Main.aspx"><img alt="title" src="../images/book_title.png"/></a> 
+      			</div>
+
+      			     <div class="text-right">
+                        <div class="btn-group">
+                        	<!-- 给按钮添加样式，图标以及阴影 -->
+                         
+                           <%-- <button type="button" class="btn btn-primary btn-lg" style="text-shadow: black 5px 3px 3px;"> <span class="glyphicon glyphicon-log-in"></span> 登录</button>
+                            <button type="button" class="btn btn-primary btn-lg"  style="text-shadow: black 5px 3px 3px;"><span class="glyphicon glyphicon-user"></span> 注册</button>
+                            <button type="button" class="btn btn-primary btn-lg"  style="text-shadow: black 5px 3px 3px;"> <span class="glyphicon glyphicon-star"></span> 关于我们</button>--%>
+
+                            <asp:Button class="btn btn-primary btn-lg"  ID="btnLogin" runat="server" Text="登录" OnClick="btnLogin_Click" />
+                            <asp:Button class="btn btn-primary btn-lg"  ID="btnRegister" runat="server" Text="注册" OnClick="btnRegister_Click" />
+                            <asp:Button class="btn btn-primary btn-lg"  ID="btnHelp" runat="server" Text="关于我们" OnClick="btnHelp_Click" />
+
+                        </div>
+                    </div>
+      		
+      		
+      		</div>
+
+      	</div>
+       
+      </div>
+
+
+        <%--搜索栏--%>
+          <div id="search">
+              	<span>搜索图书：</span>
+                <asp:TextBox ID="KeyWord" runat="server" ForeColor="Black"></asp:TextBox>
+                <asp:Button ID="BtnSearch" type="submit" runat="server" Text=" 搜 索 " class="btn btn-primary btn-xs"  style="text-shadow: black 4px 2px 2px;" OnClick="BtnSearch_Click" />
+          </div>
+
+
+        <%--   导航栏--%>
+            <!-- class="navbar navbar-inverse" 
+     		class="navbar navbar-default"-->
+    <nav  class="navbar navbar-inverse" role="navigation" style="margin:0px;">
+	<div class="container-fluid"> 
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target="#example-navbar-collapse">
+			<span class="sr-only">切换导航</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="#">流浪书店</a>
+	</div>
+	<div class="collapse navbar-collapse" id="example-navbar-collapse" style="z-index:20;position:relative;">
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="../ContentPage/Main.aspx" >网站主页</a></li>
+			<li><a href="../ContentPage/HotBook.aspx">畅销图书</a></li>
+            <li><a href="../ContentPage/NewBook.aspx">新品图书</a></li>
+          <%--  下拉菜单--%>
+	<%--		<li class="dropdown">
+				<a href="../ContentPage/NewBook.aspx" class="dropdown-toggle" data-toggle="dropdown">
+					名人著作 <b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu" >
+					<li><a href="#">莫言</a></li>
+					<li><a href="#">马克·吐温</a></li>
+					<li class="divider"></li>
+					<li><a href="#">雨果</a></li>
+					<li><a href="#">鲁迅</a></li>
+					<li class="divider"></li>
+					<li><a href="#">欧·亨利</a></li>
+				</ul>
+			</li>--%>
+			<li><a href="../ContentPage/AccountInfo.aspx">会员信息</a></li>
+			<li><a href="../ContentPage/Cart.aspx">购物车</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#contact">联系我们</a></li>
+		</ul>
+
+<%--		<form class="navbar-form navbar-right" role="search">
+			<span style="color: white;">搜索图书：</span>
+        <div class="form-group">
+
+            <input type="text" class="form-control" placeholder="Search" style="width:160px;">
+        </div>
+        <button type="submit" class="btn btn-primary"  style="text-shadow: black 4px 2px 2px;"><span class="glyphicon glyphicon-search"></span> 搜索</button>
+    	</form>--%>
+	</div>
+    
+	</div>
+</nav>
+
+
+
+    <!-- ===============================制作模态框=========================== -->
+    <!-- modal说明是div的内容识别为模态框，fade表示当模态框切换时，引起内容渐入淡出 -->
+      <div class="modal fade" id="contact">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+
+            <!-- 模态框的主体包括三个部分：头部，主要内容和底部 -->
+            <div class="modal-header">
+              <!-- data-dismiss是关闭模态框和遮罩层 -->
+              <button type="button" class="close" data-dismiss="modal">
+                <!-- &times代表x -->
+                <span aria-hidden="true">&times;</span>
+              </button>
+
+              <!-- 模态框的标题 -->
+              <h4 class="modal-title">联系我们</h4>
+            </div>
+
+
+            <div class="modal-body">
+              <!-- 模态框的主要内容 -->
+
+              <span>如果您有任何问题，都可以联系我们，我们会全力帮你解决！<br/>
+              	 电话号码：10086 &nbsp;
+              	 E-mail：lbbjzz@gmail.com	</span>
+            </div>
+
+            <div class="modal-footer">
+              <!-- 模态框的底部 -->
+              <button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+       
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+    <!-- =================================================================================== -->
+
+
+
+
+     <%--   中间内容--%>
+       <div id="main" class="container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+
+
+       <footer>
+            <br />
+            制作班级：17软件工程B班<br />
+            <br />
+            &nbsp; <span class="glyphicon glyphicon-copyright-mark"></span>2019 苏基明 刘栋 张微如 刘嘉伟 宋俊武 版权所有<br />
+            <br />
+      </footer>
+
+
+    </form>
+   
+</body>
+</html>
+
